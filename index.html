@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Georgia Tech Conferences</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #003057;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        header img {
+            height: 60px;
+            margin-right: 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-family: Arial, sans-serif;
+        }
+
+        .gold-banner {
+            background-color: #B3A369;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content {
+            max-width: 1000px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .content img {
+            max-width: 48%;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .event-details {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .event-details ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .event-details ul li {
+            margin: 10px 0;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+
+        .form-container h2 {
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-container label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-container input, 
+        .form-container textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+
+        .form-container button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 1.1em;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('You got phished!');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="/images/gt.jpeg" alt="Georgia Tech Logo">
+        <h1>Georgia Tech</h1>
+    </header>
+    <p style="text-align: center; font-family: Arial, sans-serif; font-size: 1.2em; color: white; background-color: #003057; margin: 0; padding: 10px;">Academics | Conferences | Networking | Degree Programs</p>
+
+    <div class="gold-banner">
+        <h1>Exclusive Final Offer For TA's! Attend 2025 NYC All Inclusive Cybersecurity Conference!</h1>
+    </div>
+    
+    <div class="content">
+        <img src="/images/nyc.jpg" alt="NYC">
+        <img src="/images/conference.jpeg" alt="Cybersecurity Conference Image">
+    </div>
+
+    <div class="event-details">
+        <h2>Important Event Information</h2>
+        <p>Join us for an exclusive cybersecurity conference in the heart of NYC, designed specifically for Security Leaders committed to advancing their organization's security posture. This event will delve into strategies for building resilient cloud infrastructures capable of adapting to ever-changing security threats. You’ll also gain insights into streamlining compliance processes to meet evolving frameworks such as FedRAMP, SOC 2, and ISO 27001. Learn how to harness the power of AI to implement proactive security measures across hybrid and multi-cloud environments. Additionally, explore the latest advancements in Cloud Native Application Protection Platforms (CNAPP), which provide unified visibility, security, and compliance for cloud-native applications by integrating various capabilities seamlessly from development to runtime. Don't miss this opportunity to learn from industry experts and connect with professionals shaping the future of cloud security!</p>
+        <p><strong>Location:</strong> New York City, NY</p>
+        <p><strong>Dates:</strong> February 15-16, 2025</p>
+        <h3>Guest Speakers</h3>
+        <ul>
+            <li>George Kurtz, CEO of Crowdstrike</li>
+            <li>Assaf Rappaport, CEO of Wiz</li>
+            <li>Jay Parikh, CEO of Lacework</li>
+            <li>Amit Yoran, CEO of Tenable</li>
+            <li>Sridhar Ramaswamy, CEO of Snowflake</li>
+        </ul>
+    </div>
+
+    <div class="form-container">
+        <h2>Reserve Now! Few Spots Remain.</h2>
+        <form onsubmit="handleSubmit(event)">
+            <label for="name">First Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your first name" required>
+
+            <label for="name">Last Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your last name" required>
+
+            <label for="name">Work Organization</label>
+            <input type="text" id="name" name="name" placeholder="Enter your organization" required>
+
+            <label for="name">Your Role</label>
+            <input type="text" id="name" name="name" placeholder="Enter your role" required>
+
+            <label for="username">Georgia Tech Username</label>
+            <input type="text" id="username" name="email" placeholder="Enter your username" required>
+            
+            <label for="password">Georgia Tech Password</label>
+            <input type="text" id="password" name="password" placeholder="Enter your password" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+
